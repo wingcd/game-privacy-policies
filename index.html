@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>游戏协议中心</title>
+<style>
+  :root {
+    --accent: #e8734a;
+    --accent-light: #fdf1ec;
+    --text: #2b2b2b;
+    --text-light: #6b6b6b;
+    --line: #ececec;
+    --bg: #f7f7f8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 640px; margin: 0 auto; padding: 56px 20px 64px; }
+  header { text-align: center; margin-bottom: 36px; }
+  header h1 { font-size: 26px; letter-spacing: 1px; }
+  header p { color: var(--text-light); font-size: 14px; margin-top: 8px; }
+  .card-list { display: flex; flex-direction: column; gap: 12px; }
+  a.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 22px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color .15s, box-shadow .15s;
+  }
+  a.card:hover { border-color: var(--accent); box-shadow: 0 4px 14px rgba(232,115,74,.12); }
+  .card .name { font-size: 17px; font-weight: 600; }
+  .card .desc { color: var(--text-light); font-size: 13px; margin-top: 3px; }
+  .card .arrow { color: var(--accent); font-size: 20px; padding-left: 12px; }
+  .tag {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 12px;
+    border-radius: 999px;
+    padding: 1px 10px;
+    margin-left: 8px;
+    vertical-align: 2px;
+  }
+  footer { text-align: center; color: var(--text-light); font-size: 13px; margin-top: 44px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>游戏协议中心</h1>
+    <p>各游戏隐私政策与用户协议索引</p>
+  </header>
+
+  <!-- 新游戏：复制一段 <a class="card"> 放到最上面即可 -->
+  <div class="card-list">
+    <a class="card" href="./消个毛线/">
+      <div>
+        <div class="name">消个毛线<span class="tag">休闲益智</span></div>
+        <div class="desc">隐私政策 · 中英双语</div>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+
+  <footer>© 2026 wingcd</footer>
+</div>
+</body>
+</html>
