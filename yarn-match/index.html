@@ -132,7 +132,7 @@
       <button id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
       <button id="btn-en" onclick="switchLang('en')">English</button>
     </div>
-    <div class="subtitle" id="page-subtitle">开发者：《消个毛线》开发团队</div>
+    <div class="subtitle" id="page-subtitle">开发者：成都致样互动科技有限公司</div>
   </header>
 
   <div class="meta">
@@ -326,7 +326,7 @@
   </div>
 
   <footer>
-    © 2026 《消个毛线》(Yarn Match) 开发团队 · Privacy Policy
+    © 2026 成都致样互动科技有限公司 · Privacy Policy
   </footer>
 </div>
 
@@ -340,11 +340,18 @@
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
     document.getElementById('page-title').textContent = lang === 'zh' ? '《消个毛线》隐私政策' : 'Yarn Match · Privacy Policy';
-    document.getElementById('page-subtitle').textContent = lang === 'zh' ? '开发者：《消个毛线》开发团队' : 'Developer: the Yarn Match development team';
+    document.getElementById('page-subtitle').textContent = lang === 'zh' ? '开发者：成都致样互动科技有限公司' : 'Developer: Chengdu Zhiyang Interactive Technology Co., Ltd.';
+    // 同步地址栏参数，方便直接复制当前语言对应的地址
+    var url = new URL(location.href);
+    url.searchParams.set('lang', lang);
+    history.replaceState(null, '', url);
   }
-  // 默认按浏览器语言显示 / default to browser language
+  // ?lang=zh / ?lang=en 固定语言；无参数时按浏览器语言 / fixed via ?lang=, else browser language
   (function () {
-    var lang = (navigator.language || navigator.userLanguage || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+    var lang = new URLSearchParams(location.search).get('lang');
+    if (lang !== 'zh' && lang !== 'en') {
+      lang = (navigator.language || navigator.userLanguage || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+    }
     switchLang(lang);
   })();
 </script>

@@ -11,9 +11,11 @@ SUD 平台提审材料：隐私政策页面 + 提审文案。
 
 部署在本仓库的 GitHub Pages 上（英文名 Yarn Match，URL 纯英文）：
 
-- https://wingcd.github.io/game-privacy-policies/yarn-match/
+- 中文（固定）：https://wingcd.github.io/game-privacy-policies/yarn-match/?lang=zh
+- English（固定）：https://wingcd.github.io/game-privacy-policies/yarn-match/?lang=en
+- 不带参数：按访问者浏览器语言自动显示
 
-平台后台需要填 URL 时直接用上面的地址。
+平台后台的中文 / 英文隐私政策 URL 字段分别填上面前两个地址；页面内手动切换语言时地址栏会同步成对应参数，可直接复制。
 
 ## 基本信息
 
@@ -30,7 +32,7 @@ SUD 平台提审材料：隐私政策页面 + 提审文案。
 | --- | --- |
 | 日期 | 页面顶部「更新日期 / 生效日期」目前是 2026-09-27，政策改版时记得同步 |
 | 邮箱 | 目前用 `wingcd@foxmail.com`，如换主体邮箱需全局替换 |
-| 公司主体 | 目前写的是「《消个毛线》开发团队」，如以后以公司名义发行，改 header 副标题和英文版对应位置 |
+| 公司主体 | 已填游戏内版权页主体「成都致样互动科技有限公司」（软著登记号 2025SR0691600），如实际运营主体不同需替换 |
 
 ## 内容依据（写了什么、为什么）
 
