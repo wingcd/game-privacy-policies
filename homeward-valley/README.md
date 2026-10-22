@@ -23,7 +23,7 @@ TapTap 平台提审材料：隐私政策页面。
 | 俄文名 | Домой в долину（与游戏内俄文标题一致） |
 | 项目路径 | H:\game_dev\taptap_maker\山谷归途（TapTap Maker 工程，另可 build-sud.mjs 转 SUD） |
 | 类型 | 休闲益智 · 栈排序解谜 |
-| 开发主体 | TapTap 个人厂商（developer_id 447170），厂商别名 Homeward Valley Studio |
+| 开发主体 | 成都致样互动科技有限公司（TapTap 后台目前挂个人厂商 developer_id 447170，政策署名按公司主体） |
 | 联系邮箱 | wingcd@foxmail.com |
 
 ## 与 sort-it-magic-water 政策的差异（按实际代码核对）
@@ -39,4 +39,4 @@ TapTap 平台提审材料：隐私政策页面。
 | --- | --- |
 | 日期 | 页面顶部「更新日期 / 生效日期」目前是 2026-10-22，政策改版时记得同步 |
 | 邮箱 | 目前用 `wingcd@foxmail.com`，如换主体邮箱需全局替换 |
-| 开发主体 | 目前署名"Homeward Valley Studio"（个人厂商别名）；若日后迁移为企业厂商（如成都致样互动科技有限公司），需全局替换页脚与副标题 |
+| 开发主体 | 已按用户确认署名"成都致样互动科技有限公司"；TapTap 后台仍挂个人厂商，若日后后台迁移为企业厂商需保持一致 |
